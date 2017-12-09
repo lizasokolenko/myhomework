@@ -1,0 +1,11 @@
+{% extends "temp.html" %}
+{% block content %}
+<p>Поиск по результатам опроса</p>
+    <form action="/results">
+    Количество проголосовавших <Br><input type="radio" required name="sex" value="male">мужского <Br><input type="radio" name="sex" value="female">женского<Br> пола <br>
+    Количество опрошенных с образованием:
+    <Br><input type="radio" name="educ" required value="nsec">Неоконченным средним <Br><input type="radio" name="educ" value="sec">Средним<Br><input type="radio" name="educ" value="nhi">Неоконченным высшим <Br><input type="radio" name="educ" value="hi">Высшим <Br>
+Количество ответов со словом: <input type="text" name="word" required ><br>
+    <input type="submit" value="Искать">
+    </form>
+{% endblock %}

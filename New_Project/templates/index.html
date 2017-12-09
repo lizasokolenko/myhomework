@@ -1,0 +1,41 @@
+{% extends "temp.html" %}
+{% block content %}
+<form action="/login">
+    <h4>Имя: <input type="text" name="name" required><br><br>
+    Возраст: <input type="text" name="age" required><br><br>
+    Пол: <input type="radio" name="sex" value="male" required>Мужской <input type="radio" name="sex" value="female" required>Женский<Br> <br>
+Родной город: <input type="text" name="city" required><br><br>
+Родной язык: <input type="text" name="lang" required><br><br>
+Образование: <Br><input type="radio" name="educ" required value="nsec">Неоконченное среднее <Br><input type="radio" name="educ" value="sec">Среднее<Br><input type="radio" name="educ" value="nhi">Неоконченное высшее <Br><input type="radio" name="educ" value="hi">Высшее <Br>
+
+<h3>Назовите предметы на картинках:</h3>
+<img src="/static/lavka.jpg" width="260" height="200"/>
+<Br><input type="radio" name="lav" required value="lavk">Лавка <Br><input type="radio" name="lav" value="skam">Скамейка<Br>
+
+
+
+<img src="/static/sharf.jpg" width="250" height="300"/>
+<Br><input type="radio" name="sharf" required value="shar">Шарфик <Br><input type="radio" name="sharf" value="plat">Платок<Br>
+
+
+<img src="/static/slanci.jpg" width="200" height="200"/>
+<Br><input type="radio" name="slan" required value="sl">Сланцы <Br><input type="radio" name="slan" value="shl">Шлепки<Br>
+
+<img src="/static/veshalka.jpg" width="300" height="200"/>
+<Br><input type="radio" name="vesh" required value="veshal">Вешалка<Br><input type="radio" name="vesh" value="plech">Плечики<Br>
+
+<img src="/static/fiol.jpg" width="200" height="100"/>
+<Br><input type="radio" name="fiol" required value="fiolet">Фиолетовый<Br><input type="radio" name="fiol" value="lilov">Лиловый<Br>
+
+<img src="/static/resinka.jpg" width="200" height="100"/>
+<Br><input type="radio" name="resin" required value="res">Резинка<Br><input type="radio" name="resin" value="lastic">Ластик<Br>
+
+<img src="/static/paket.jpg" width="200" height="300"/>
+<Br><input type="radio" name="paket" required value="pak">Пакет<Br><input type="radio" name="paket" value="mesh">Мешок<Br>
+
+<img src="/static/zmeika.jpg" width="200" height="100"/>
+<Br><input type="radio" name="zmeika" required value="zm">Змейка<Br><input type="radio" name="zmeika" value="mol">Молния<Br>
+</h4>
+<input type="submit" value="Отправить">
+    </form>
+{% endblock %}
