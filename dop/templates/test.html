@@ -1,0 +1,17 @@
+{% extends "temp.html" %}
+{% block content %}
+<p>Тест </p>
+    <form action="/thanks">
+    Выберите правильные варианты ответа: <Br><Br><Br><input type="radio" required name="a" value="1_1"> ель<Br><input type="radio" name="a" value="1_2"> ѣль<br><br><br>
+    <input type="radio" required name="b" value="1_1"> краевѣдъ<Br><input type="radio" name="b" value="1_2"> краеведъ<br><br><br>
+	<input type="radio" required name="c" value="1_1"> яблонѣвый<Br><input type="radio" name="c" value="1_2"> яблоневый<br><br><br>
+	<input type="radio" required name="d" value="1_1"> хмель<Br><input type="radio" name="d" value="1_2"> хмѣль<br><br><br>
+	<input type="radio" required name="e" value="1_1"> совѣстно<Br><input type="radio" name="e" value="1_2"> совестно<br><br><br>
+	<input type="radio" required name="f" value="1_1"> ячмѣнь<Br><input type="radio" name="f" value="1_2"> ячмень<br><br><br>
+	<input type="radio" required name="g" value="1_1"> местечко<Br><input type="radio" name="g" value="1_2"> мѣстечко<br><br><br>
+	<input type="radio" required name="h" value="1_1"> венчать<Br><input type="radio" name="h" value="1_2"> вѣнчать<br><br><br>
+	<input type="radio" required name="i" value="1_1"> вкратцѣ<Br><input type="radio" name="i" value="1_2"> вкратце<br><br><br>
+	<input type="radio" required name="j" value="1_1"> пень<Br><input type="radio" name="j" value="1_2"> пѣнь<br><br><br>
+    <input type="submit" value="Узнать результат">
+    </form>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "temp.html" %}
+{% block content %}
+<form action="/newword">
+Введите слово: <Br><Br><Br><input type="text" required name="word" <Br><Br>
+<input type="submit" value="Отправить"><Br><Br><Br>
+
+Погода в Скопье {{temperature}} &#8451;. {{weather}}.
+{% endblock %}
