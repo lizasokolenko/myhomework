@@ -1,0 +1,5 @@
+<form action="/newword">
+    ¬ведите слово: <input type="text" name="word" required><br><br>
+    <input type="submit" value="»скать">
+    </form>
+ </body></html>
